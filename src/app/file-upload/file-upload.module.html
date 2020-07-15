@@ -1,0 +1,10 @@
+
+<h5>File Upload</h5>
+<p>Certificate: <input type='file' (change)="onSelectFile($event)" multiple></p>
+<p>Photo: <input type='file' (change)="onSelectFile($event)" multiple></p>
+<p>Resume: <input type='file' (change)="onSelectFile($event)" multiple></p>
+
+<div class="form-group">
+    <button [disabled]="loading" class="btn btn-primary">Submit</button>
+    <a [routerLink]="['/login']" class="btn btn-link">Cancel/Home</a>
+</div>

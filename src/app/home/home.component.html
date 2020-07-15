@@ -7,7 +7,7 @@
         <p>Mobile Number: {{user.mobileno}}</p>
         <p>Gender: {{user.gender| titlecase}}</p>
         <p>User Notes: {{user.details}}</p>
-        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+        <a (click)="deleteUser(user.id)" class="text-danger"><button [disabled]="loading" class="btn btn-primary">Delete</button></a>
     </li>
 </ul>
-<p><a [routerLink]="['/login']">Logout</a></p>
+<p><a [routerLink]="['/login']"><button [disabled]="loading" class="btn btn-primary">Logout</button></a></p>
